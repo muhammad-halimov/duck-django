@@ -61,8 +61,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-	    PROJECT_ROOT / 'templates'
-	],
+            PROJECT_ROOT / 'templates'
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -128,6 +128,11 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     PROJECT_ROOT / 'static'
 ]
+
+MEDIA_URL = '/uploads/'
+
+MEDIA_ROOT = PROJECT_ROOT / 'static/uploads'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
