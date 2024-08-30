@@ -1,0 +1,39 @@
+{% extends 'index.htm' %}
+{% load static %}
+{% block content %}
+    <main class="main">
+        {% for category in categories %}
+            <h1 id="{{ category.tags }}" class="title">{{ category.title }}</h1>
+            <div class="product-section">
+                <div class="product-section-block">
+                    <img alt="" src="{% static 'assets/img/icons/cart.png' %}">
+                    <h1>1Lorem Ipsum</h1>
+                    <p>1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h2>350$</h2>
+                    <button>Добавить в корзину<img alt="" src="{% static 'assets/img/icons/cart.png' %}"></button>
+                </div>
+                <div class="product-section-block">
+                    <img alt="" src="{% static 'assets/img/icons/cart.png' %}">
+                    <h1>1Lorem Ipsum</h1>
+                    <p>1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h2>350$</h2>
+                    <button>Добавить в корзину<img alt="" src="{% static 'assets/img/icons/cart.png' %}"></button>
+                </div>
+                <div class="product-section-block">
+                    <img alt="" src="{% static 'assets/img/icons/cart.png' %}">
+                    <h1>1Lorem Ipsum</h1>
+                    <p>1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h2>350$</h2>
+                    <button>Добавить в корзину<img alt="" src="{% static 'assets/img/icons/cart.png' %}"></button>
+                </div>
+                <div class="product-section-block">
+                    <img alt="" src="{% static 'assets/img/icons/cart.png' %}">
+                    <h1>1Lorem Ipsum</h1>
+                    <p>1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h2>350$</h2>
+                    <button>Добавить в корзину<img alt="" src="{% static 'assets/img/icons/cart.png' %}"></button>
+                </div>
+            </div>
+        {% endfor %}
+    </main>
+{% endblock %}

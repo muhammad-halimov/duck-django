@@ -1,6 +1,8 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-
+from . import models
 
 def main(request):
-    return HttpResponse(request, reason=200)
+    categories = models.Categories.objects.all()
+
+    context = {'categories': categories}
+    return render(request, template_name='base/main.htm', context=context)

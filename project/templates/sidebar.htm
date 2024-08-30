@@ -1,0 +1,8 @@
+{% load static %}
+<aside>
+    <ul>
+        {% for category in categories %}
+            <li><a href="#{{ category.tags }}">{{ category.title }}</a><img width="{{ category.width }}" height="{{ category.height }}" src="{{ category.cover.url }}" alt=""/></li>
+        {% endfor %}
+    </ul>
+</aside>

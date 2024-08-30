@@ -1,0 +1,16 @@
+{% load static %}
+<header>
+    <a href="{% url 'main' %}" class="header-logo-div">
+        <img alt="" class="header-logo" src="{% static 'assets/img/icons/favicon.svg' %}">Duck BBQ
+    </a>
+    <ul class="header-sections1">
+        <li><a href="{% url 'main' %}">Меню</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li><a href="#">Вакансии</a></li>
+    </ul>
+    <ul class="header-sections2">
+        <li>Доставка с 9:00 до 23:00</li>
+        <li>Телефон: 222-333</li>
+        <li><img alt="" src="{% static 'assets/img/icons/cart.png' %}" width="32" height="32"></li>
+    </ul>
+</header>
